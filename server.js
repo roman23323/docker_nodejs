@@ -1,11 +1,12 @@
-const express = require('express');
-const app = express();
-const port = 3000;
+const http = require('http');
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
+const PORT = process.env.PORT || 3000;
+
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Hello from Nodejs and Kopiy Ilya!\n');
 });
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+server.listen(PORT, () => {
+  console.log(`Сервер запущен на порту ${PORT}`);
 });

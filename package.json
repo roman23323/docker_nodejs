@@ -1,13 +1,13 @@
 {
-  "name": "hello-world-node",
+  "name": "docker_nodejs",
   "version": "1.0.0",
-  "description": "Simple Node.js 'Hello World' application",
   "main": "server.js",
   "scripts": {
-    "build": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "dependencies": {
-    "express": "^4.18.2"
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

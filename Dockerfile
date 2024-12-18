@@ -1,5 +1,5 @@
 # Используем официальный образ Node.js
-FROM node:18
+FROM node:16
 
 # Создаем рабочую директорию
 WORKDIR /app
@@ -13,6 +13,5 @@ RUN npm install
 # Копируем исходный код приложения
 COPY . .
 
-# Собираем и запускаем приложение
-RUN npm run build
+# Запускаем приложение
 CMD ["node", "server.js"]
